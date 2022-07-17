@@ -18,7 +18,7 @@ root.title('Nebil Calculator')# This gives you a title for the window in tkinter
 e = Entry(root,width=35,borderwidth=5) # This makes a screen to add your calcualtions
 e.grid(row=0, column=0, columnspan = 3, padx=10, pady=10) # This allows you to display the screen and postion the size
 def button_click(number): # This allows you to click the button on the calculator and stops you from repeating the same number twice 
-    current = 0# e.get() #returns whatever button they clicked
+    current = e.get() #returns whatever button they clicked
     e.delete(0,END)# Deletes the charcaters after the number is written
     e.insert(0,str(current) + str(number))# Allows a string to display at the screen
 def button_clear():
