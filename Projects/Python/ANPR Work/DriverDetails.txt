@@ -1,0 +1,14 @@
+Name          Plate Number Address                        
+John Ashcroft   AD90 XDR   54 Windows Street OS6 7AD         
+Mohammed Ali    AX24 SAD   32 Mac Road V2 4CD           
+Adam Yousef     AC54 XDE   43 St Android S12 86X        
+Abdul Ibrahim   DE09 NNN   42 Apple Station S90 X21     
+Nabil Yunus     FO32 DSA   12 Science Computer S21 X21  
+Lopez Perez     AX4C DEZ   89 St Computing Time S71 X321     
+Alex Johnson    AS45 XPZ   43 Apple Street OPZ 78X         
+Ali Ibrahim     AZ09 SDE   130 computer lane SE4 X3D  
+Ismail Saleh    PO23 FOX   190 ST Linux Street SL4 X34
+Abdullah Hasan   AD93 DRT   100 Windows Lane S23 X79
+Suhayb Munir   AX90 RED   120 Windows Lane E45 9X0
+Abdi Welid   ED23 XYZ   111 Windows Street X9C LPZ
+George West   AP90 CXZ   120 Mac Street X9Z 8JX

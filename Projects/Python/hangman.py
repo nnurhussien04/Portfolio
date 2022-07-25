@@ -25,9 +25,13 @@ while True:
         lives -= 1
         print(f"Here is the lives remaning {lives}")
 
-    if len(right) == len(letters) and right == letters:
-        print("You got the word")
-        break
+    if (len(right) == len(letters) or len(right) < len(letters)):
+        if letters == right:
+            print(len(right),len(letters))
+            print("You got the word")
+            break
+        else:
+            print(letters)
 
     if lives == 0:
         print(f'You lost, the word was {word}')

@@ -1,0 +1,8 @@
+Name 		Plate Number   Address                    Speed
+Ali Ibrahim     AZ09 SDE   130 computer lane SE4 X3D       60.0
+Lopez Perez     AX4C DEZ   89 St Computing Time S71 X321   60.0
+Alex Johnson    AS45 XPZ   43 Apple Street OPZ 78X         60.0
+Alex Johnson    AS45 XPZ   43 Apple Street OPZ 78X         103.0
+Lopez Perez     AX4C DEZ   89 St Computing Time S71 X321   73.0
+George West     AP90 CXZ   120 Mac Street X9Z 8JX          80.0
+Mohammed Ali    AX24 SAD   32 Mac Road V2 4CD  60.0
