@@ -1,4 +1,4 @@
-word = "Hello"
+word = "hello"
 letters = list(word)
 right = []
 lives = 5
@@ -21,17 +21,18 @@ while True:
             except :
                     print('Error')
         print("Right:", right)
+        print(len(right))
     else:
         lives -= 1
         print(f"Here is the lives remaning {lives}")
 
-    if (len(right) == len(letters) or len(right) < len(letters)):
+    if (len(right) == len(letters) or len(right) > len(letters)):
         if letters == right:
             print(len(right),len(letters))
             print("You got the word")
             break
         else:
-            print(letters)
+            print("Error")
 
     if lives == 0:
         print(f'You lost, the word was {word}')

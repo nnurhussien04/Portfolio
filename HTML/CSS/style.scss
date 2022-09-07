@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Slab&display=swap');
+
+:root{
+    --primary-color:green
+}
+
+body{
+    background: green;
+    margin: 0;
+    font-family:'Cabin';
+}
+
+.navbar{
+    background: white;
+    padding: 1em;
+
+    .logo{
+        text-decoration: none;
+        font-weight: bold;
+        color: red;
+        font-size: 1.2em;
+    }
+
+    span{
+        color:var(--primary-color);
+    }
+
+    nav{
+        display: none;
+    }
+    
+    .container{
+        display: flex;
+        place-content: space-between;
+    }
+
+    .mobile-menu{
+        cursor:pointer;
+    }
+}
+
+a{
+    color:rgb(35, 206, 41)
+}
+
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+section{
+    padding: 5em 2em;
+}
+
+.hero{
+    text-align: center;
+}
+
+.left-col{
+    .subhead{
+        text-transform: capitalize;
+        font-weight: bold;
+        color: rgb(35, 206, 41);
+    }
+
+    h1{
+        font-size: 2em;
+        line-height: 0.5em;
+    }
+
+    .primary-cta{
+        background-color: yellow;
+        text-decoration: none;
+        padding: 1em .5em;
+        font-size: 1.2em;
+        border-radius: .3em;
+        border-color: rgb(35, 206, 41);
+        font-weight: bolder ;
+        display: inline-block;
+
+    }
+
+    .watch-video-cta{
+        display: block;
+        margin-top: 2.5em;
+        img{
+            margin-right: .5em;
+        }
+
+}
+}
+
+.hero-img{
+    width: 70%;
+    margin-top: 1.5em;
+
+}
+
+.membership-section{
+    background: white;
+    color: rgb(35, 206, 41);
+}
+
+ul.membership-list{
+    margin:0em;
+    padding-left: .1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(19rem,1fr));
+
+    li{
+        font-size: 1.1em;
+        margin-bottom: 1em;
+        margin-left: 2em;
+        position: relative;
+
+        &:before {
+            content:'';
+            left : -2em;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-image: url('images/bullet.svg');
+            background-size: contain;
+            margin-right: .5em;
+
+
+        }
+
+    }
+
+
+}
+
+.membership-section img{
+    display: none;
+}
+
+.staff-section{
+    background: red;
+    color: red;
+    ul{
+        li{
+            background: darkred;
+            text-align: center;
+            padding: 2em 1em;
+            width: 80%;
+            margin: 0 auto 5em auto;
+            border-radius: 0.5em;
+
+
+            img{
+                width:5em;
+                height: 5em;
+                border: 5px solid green;
+                border-radius: 50%;
+                margin-top: -4.5em;
+            }
+        }
+    }
+}
+
+h2{
+    font-size: 1.8em;
+    color: rgb(35, 206, 41);
+}
+
+label{
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: .5em;
+    color: rgb(35, 206, 41);
+}
+
+input, textarea{
+    width: 70%;
+    padding: .2em;
+    margin-bottom: .1em;
+    border-radius: .3em;
+    border: solid 1px black;
+    box-sizing: border-box;
+
+}
+
+input[type = submit]{
+    background-color: white;
+    color: rgb(35, 206, 41);
+    font-family: 'Cabin';
+    font-size: 1.0em;
+    border: none;
+    margin-top: 0.5em;
+    margin-bottom: 5em;
+    border-radius: 1em;
+    padding: .5em 0em;
+    display: inline-block;
+    width: 10em;
+    cursor: pointer;
+}
+
+iframe{
+    width:100%;
+    height: 300px;
+}
+
+nav.mobile-menu{
+    display: block;
+}
+
+nav{
+    position : fixed;
+    z-index: 999;
+    width: 30%;
+    right:0;
+    top:0;
+    background: green;
+    height:100vh;
+    padding: 1em;
+}
+
+ul.primary-nav{
+    margin-top: 5em;
+}
+
+li{
+    a{
+        color:white;
+        text-decoration: none;
+        display: block;
+        padding: .2em;
+        text-align: right;
+    }
+    & :hover{
+        font-weight: bold;
+        
+    }
+}
+
+.mobile-menu-exit{
+    float: right;
+    padding: .5em;
+    cursor: pointer;
+}
+
+
+@media only screen and (min-width:768px){
+    .mobile-menu,.mobile-menu-exit{
+        display: none;
+    }
+
+    .navbar .container{
+        display: grid;
+        grid-template-columns: 180px auto;
+        justify-content: unset;
+    }
+
+    .navbar nav{
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+
+        ul{
+            display: flex;
+
+        }
+
+        a{
+            color:green;
+            font-size: 1em;
+            padding: .5em.5em;
+        }
+        
+        ul.primary-nav{
+            margin: 0;
+
+        }
+        
+        li.membership a{
+            color:white;
+            border: solid 1px;
+            border-radius: 0.2em;
+            background-color: red;
+            font-weight: bold;
+
+            &:hover{
+                color: red;
+                background-color: white;
+            }
+        }
+
+
+    }
+}
+
+@media only screen and (min-width:768px){
+    .container{
+        width: 1080px;
+        margin: 0,auto;
+    }
+
+    section{
+        padding: 10em, 4em;
+    }
+
+    .hero .container{
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+
+        .left-col{
+            margin: 3em 3em 0 5em;
+            font-size: 1em;
+            width: 90%;
+        }
+
+    }
+
+    .hero-img{
+        width: 30%;
+        margin-right: 4em;
+
+    }
+
+    .hero-cta{
+        display: contents;
+    }
+
+    ul.membership-list{
+        display: block;
+        margin-left: 4em;
+
+        li{
+            font-size: 1.4em;
+
+            &:before{
+                width: 25px;
+                height: 25px;
+            }
+
+        }
+
+    
+
+    }
+
+    .membership-section{
+        position: relative;
+    }   
+
+    .membership-section img{
+        display: block;
+        position: absolute;
+        right:3em;
+        width: 350px;
+        bottom: 50px;
+    }
+
+    .staff-section ul{
+        display: flex;
+
+        li{
+            margin: 0 1em 0 5em;
+            
+        }
+    }
+
+    .contact-section{
+        position: relative;
+        .container{
+            display: flex;
+        }
+
+    }
+
+    .contact-right{
+        position:absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 50%;
+
+        iframe{
+            height: 100%;
+        }
+
+    }
+
+
+
+    
+    
+    
+
+
+
+}
