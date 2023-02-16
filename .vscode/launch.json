@@ -1,7 +1,38 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": []
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch Tutorial",
+      "request": "launch",
+      "mainClass": "Tutorial",
+      "projectName": "Portfolio_df2fbdf4"
+    },
+    {
+      "type": "java",
+      "name": "Launch main1",
+      "request": "launch",
+      "mainClass": "BankProject.main1",
+      "projectName": "Portfolio_df2fbdf4"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/nebil/OneDrive/Documents/NN/Nebil 16+/Computer Science University/CV/Portfolio",
+      "program": "c:/Users/nebil/OneDrive/Documents/NN/Nebil 16+/Computer Science University/CV/Portfolio/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
 }
